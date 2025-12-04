@@ -402,6 +402,12 @@ section {
     font-weight: 500;
 }
 
+.service-tags .price-tag {
+    background-color: var(--primary-green);
+    color: var(--white);
+    font-weight: 700;
+}
+
 /* Pricing Section */
 .pricing {
     background-color: var(--light);
@@ -501,6 +507,28 @@ tbody tr {
 }
 
 .btn-download-full:hover {
+    background-color: var(--secondary-blue);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+.services-download {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-download-services {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-download-services:hover {
     background-color: var(--secondary-blue);
     transform: translateY(-3px);
     box-shadow: var(--shadow);
@@ -896,12 +924,21 @@ tbody tr {
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         border-bottom: none;
+        background: var(--white);
     }
 
     tbody td {
         display: block;
-        padding: 10px 0;
+        padding: 8px 15px;
+        border-bottom: 1px solid var(--light-gray);
+        margin-bottom: 5px;
+        border-radius: 5px;
+        background: var(--light);
+    }
+
+    tbody td:last-child {
         border-bottom: none;
+        margin-bottom: 0;
     }
 
     .service-column::before { content: "Service: "; font-weight: 600; color: var(--primary-blue); }
@@ -981,25 +1018,40 @@ tbody tr {
     section {
         padding: 60px 0;
     }
-    
+
     .hero {
         padding-top: 120px;
     }
-    
+
     .hero h1 {
         font-size: 1.6rem;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .btn-primary, .btn-secondary {
         padding: 10px 20px;
         font-size: 0.9rem;
     }
-    
+
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-details p {
+        font-size: 0.9rem;
+        word-break: break-word;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-icon {
+        margin-bottom: 15px;
+        margin-right: 0;
     }
 }
