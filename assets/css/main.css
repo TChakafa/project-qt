@@ -403,9 +403,11 @@ section {
 }
 
 .service-tags .price-tag {
-    background-color: var(--primary-green);
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
     color: var(--white);
     font-weight: 700;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+    animation: pulse 2s infinite;
 }
 
 /* Pricing Section */
