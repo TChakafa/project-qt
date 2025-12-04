@@ -913,38 +913,21 @@ tbody tr {
         font-size: 1.6rem;
     }
 
-    thead {
-        display: none;
+    .pricing-table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
-    tbody tr {
-        display: block;
-        padding: 20px;
-        margin-bottom: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        border-bottom: none;
-        background: var(--white);
+    .pricing-table thead th,
+    .pricing-table tbody td {
+        white-space: nowrap;
+        min-width: 120px;
     }
 
-    tbody td {
-        display: block;
-        padding: 8px 15px;
-        border-bottom: 1px solid var(--light-gray);
-        margin-bottom: 5px;
-        border-radius: 5px;
-        background: var(--light);
+    .pricing-table thead th:first-child,
+    .pricing-table tbody td:first-child {
+        min-width: 150px;
     }
-
-    tbody td:last-child {
-        border-bottom: none;
-        margin-bottom: 0;
-    }
-
-    .service-column::before { content: "Service: "; font-weight: 600; color: var(--primary-blue); }
-    .details-column::before { content: "Details: "; font-weight: 600; color: var(--primary-blue); }
-    .price-column::before { content: "Price: "; font-weight: 600; color: var(--primary-green); }
-    .notes-column::before { content: "Notes: "; font-weight: 600; color: var(--gray); }
 }
 
 @media (max-width: 768px) {
