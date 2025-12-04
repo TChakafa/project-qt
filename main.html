@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Solutions & Business Systems Development</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-image">
+                    <img src="assets/images/logo.png" alt="Digital Solutions Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="logo-icon" style="display: none;">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Digital Solutions</span>
+                    <span class="logo-sub">Business Systems Development</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#collaborate">Collaborate</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="docs/prices.pdf" class="btn-download" download><i class="fas fa-download"></i> Price List</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Digital Solutions & <span class="highlight">Business Systems</span> Development</h1>
+                <p>We build responsive websites, analytics dashboards, ERP systems, AI solutions, and custom software for businesses and educational institutions.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary">Our Services</a>
+                    <a href="#contact" class="btn-secondary">Contact Us</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="floating-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="floating-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Digital Solutions</h2>
+            <p class="section-subtitle">We specialize in developing custom digital solutions for businesses and educational institutions</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon bg-gradient-to-br from-blue-500 to-purple-600">
+                        <i class="fas fa-globe text-white"></i>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Responsive website development with modern design and structure. We create up to 5 pages or more depending on your needs.</p>
+                    <div class="service-tags">
+                        <span>Responsive Design</span>
+                        <span>Modern UI/UX</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon bg-gradient-to-br from-green-500 to-teal-600">
+                        <i class="fas fa-chart-line text-white"></i>
+                    </div>
+                    <h3>Analytics Dashboards</h3>
+                    <p>Dashboard development with layout, visual elements and connections to data sources for displaying KPIs and business metrics.</p>
+                    <div class="service-tags">
+                        <span>Data Visualization</span>
+                        <span>KPI Tracking</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon bg-gradient-to-br from-purple-500 to-pink-600">
+                        <i class="fas fa-cogs text-white"></i>
+                    </div>
+                    <h3>ERP System Development</h3>
+                    <p>Customization of specific modules within an ERP system based on functional requirements including coding and configuration.</p>
+                    <div class="service-tags">
+                        <span>Business Automation</span>
+                        <span>Custom Modules</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon bg-gradient-to-br from-yellow-500 to-orange-600">
+                        <i class="fas fa-graduation-cap text-white"></i>
+                    </div>
+                    <h3>School Software Projects</h3>
+                    <p>Custom software solutions for students including AI/ML component integrations for mini/dissertation projects.</p>
+                    <div class="service-tags">
+                        <span>AI/ML Integration</span>
+                        <span>Academic Projects</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon bg-gradient-to-br from-indigo-500 to-blue-600">
+                        <i class="fas fa-robot text-white"></i>
+                    </div>
+                    <h3>AI & Chatbot Development</h3>
+                    <p>Design, build and deploy conversational agents and intelligent assistants with NLU pipeline and web widget integration.</p>
+                    <div class="service-tags">
+                        <span>Natural Language</span>
+                        <span>Conversational AI</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon bg-gradient-to-br from-red-500 to-pink-600">
+                        <i class="fas fa-mobile-alt text-white"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Native or cross-platform mobile apps including backend API development where required for startup-level applications.</p>
+                    <div class="service-tags">
+                        <span>iOS & Android</span>
+                        <span>API Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Development Pricing</h2>
+            <p class="section-subtitle">All prices are quoted in United States Dollars (USD), with options for ZWG payments upon agreement</p>
+            
+            <table class="pricing-table">
+                <thead>
+                    <tr class="table-header">
+                        <th class="service-column">Service Item</th>
+                        <th class="details-column">Details</th>
+                        <th class="price-column">Estimated Price (USD)</th>
+                        <th class="notes-column">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row">
+                        <td class="service-column">Website Development</td>
+                        <td class="details-column">
+                            <div>Simple: Up to 5 pages</div>
+                            <div>Standard: 6+ pages</div>
+                        </td>
+                        <td class="price-column">
+                            <div>US$100</div>
+                            <div>US$150 - US$300</div>
+                        </td>
+                        <td class="notes-column">Development to completion</td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td class="service-column">Analytics Dashboards</td>
+                        <td class="details-column">Dashboard layout, visual elements, data connections</td>
+                        <td class="price-column">US$150 - US$500</td>
+                        <td class="notes-column">Development to completion</td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td class="service-column">ERP System Development</td>
+                        <td class="details-column">Customization of specific modules as per requirements</td>
+                        <td class="price-column">US$150 - US$500</td>
+                        <td class="notes-column">For development of specified modules/customizations</td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td class="service-column">School Software Projects</td>
+                        <td class="details-column">Mini/dissertation projects with AI/ML integrations</td>
+                        <td class="price-column">US$80 - US$200</td>
+                        <td class="notes-column">From topic formulation to development and analysis</td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td class="service-column">AI & Chatbot Development</td>
+                        <td class="details-column">NLU pipeline, training dataset, web widget integration</td>
+                        <td class="price-column">US$100 - US$350</td>
+                        <td class="notes-column">Basic context handling with admin panel for updates</td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td class="service-column">Mobile App Development</td>
+                        <td class="details-column">Native or cross-platform mobile apps</td>
+                        <td class="price-column">US$100 - US$350</td>
+                        <td class="notes-column">Basic to moderate startup-level mobile app development</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> These prices exclude maintenance, ongoing support and deployment services.</p>
+                <a href="docs/prices.pdf" class="btn-download-full" download><i class="fas fa-file-download"></i> Download Full Price List (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborative Projects Section -->
+    <section class="collaborate" id="collaborate">
+        <div class="container">
+            <h2 class="section-title">Collaborative Projects</h2>
+            <p class="section-subtitle">Join us in developing innovative solutions for emerging markets</p>
+            
+            <div class="collab-content">
+                <div class="collab-info">
+                    <div class="upcoming-project">
+                        <div class="project-badge">Upcoming</div>
+                        <h3>Trading & Betting Agents Development</h3>
+                        <p>We're currently exploring the development of intelligent trading and betting agents. These systems would utilize AI and data analysis to provide insights and automated decision-making capabilities for financial and betting markets.</p>
+                        
+                        <div class="project-features">
+                            <h4>Key Features We're Exploring:</h4>
+                            <ul>
+                                <li><i class="fas fa-chart-candlestick"></i> Market analysis and prediction algorithms</li>
+                                <li><i class="fas fa-robot"></i> Automated trading/betting decision systems</li>
+                                <li><i class="fas fa-shield-alt"></i> Risk management and control mechanisms</li>
+                                <li><i class="fas fa-database"></i> Real-time data processing and API integrations</li>
+                                <li><i class="fas fa-user-cog"></i> Customizable strategy parameters</li>
+                            </ul>
+                        </div>
+                        
+                        <p class="collab-call">We're looking for collaborators with expertise in financial markets, data science, AI/ML, or betting systems to join this innovative project.</p>
+                    </div>
+                </div>
+                
+                <div class="collab-form">
+                    <h3>Express Interest in Collaboration</h3>
+                    <p>Fill out this form to express your interest in collaborating on our trading/betting agents project or other innovative solutions.</p>
+                    
+                    <div class="quick-contact">
+                        <h4>Quick Contact for Collaboration</h4>
+                        <div class="quick-contact-buttons">
+                            <a href="https://wa.me/263771537650?text=Hi%2C%20I%27m%20interested%20in%20collaborating%20on%20your%20trading%2Fbetting%20agents%20project" target="_blank" class="quick-contact-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="mailto:tynoschakafa20@gmail.com?subject=Collaboration%20Interest&body=Hi%2C%20I%27m%20interested%20in%20collaborating%20on%20your%20trading%2Fbetting%20agents%20project." class="quick-contact-btn email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email Direct</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Completed Projects & Profile</h2>
+            <p class="section-subtitle">Explore my portfolio showcasing completed projects and professional background</p>
+
+            <div class="portfolio-content">
+                <a href="https://tynoschakafa.netlify.app/" target="_blank" class="btn-primary">View Portfolio & Profile <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch to discuss your digital solution needs</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>sales@sprintsolutions.co.zw</p>
+                            <p>tynoschakafa20@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone / WhatsApp</h4>
+                            <p>0771537650</p>
+                            <p>0713277304</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <div class="quick-contact">
+                        <h4>Quick Contact</h4>
+                        <div class="quick-contact-buttons">
+                            <a href="https://wa.me/263771537650" target="_blank" class="quick-contact-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="mailto:tynoschakafa20@gmail.com" class="quick-contact-btn email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email Direct</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Digital Solutions</span>
+                            <span class="logo-sub">Business Systems Development</span>
+                        </div>
+                    </a>
+                    <p>Developing custom digital solutions for businesses and educational institutions.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#collaborate">Collaborate</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li>Website Development</li>
+                        <li>Analytics Dashboards</li>
+                        <li>ERP Systems</li>
+                        <li>School Software</li>
+                        <li>AI & Chatbots</li>
+                        <li>Mobile Apps</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:sales@sprintsolutions.co.zw">sales@sprintsolutions.co.zw</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:tynoschakafa20@gmail.com">tynoschakafa20@gmail.com</a></p>
+                    <p><i class="fas fa-phone-alt"></i> 0771537650 / 0713277304</p>
+                    <div class="footer-download">
+                        <a href="docs/prices.pdf" download><i class="fas fa-download"></i> Download Price List</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Digital Solutions & Business Systems Development. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

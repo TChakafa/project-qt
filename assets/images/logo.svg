@@ -1,0 +1,17 @@
+<svg width="45" height="45" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b894;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0984e3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="45" height="45" rx="8" fill="url(#logoGradient)"/>
+  <g fill="white">
+    <!-- Code brackets -->
+    <path d="M12 15 L8 22.5 L12 30" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M33 15 L37 22.5 L33 30" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Center element -->
+    <circle cx="22.5" cy="22.5" r="3" fill="white"/>
+    <path d="M18 18 L27 27 M27 18 L18 27" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>
