@@ -240,6 +240,12 @@ section {
     cursor: pointer;
 }
 
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: block;
+    }
+}
+
 /* Hero Section */
 .hero {
     padding-top: 140px;
@@ -931,11 +937,7 @@ tbody tr {
     }
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-    
+@media (max-width: 992px) {
     .nav-links {
         position: fixed;
         top: 70px;
@@ -951,18 +953,18 @@ tbody tr {
         visibility: hidden;
         transition: var(--transition);
     }
-    
+
     .nav-links.active {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
     }
-    
+
     .nav-links li {
         margin: 0 0 15px 0;
         width: 100%;
     }
-    
+
     .nav-links a {
         display: block;
         padding: 10px 0;
