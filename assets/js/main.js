@@ -16,11 +16,11 @@ if (currentYear) {
 if (menuToggle && navLinks) {
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        menuToggle.innerHTML = navLinks.classList.contains('active') 
-            ? '<i class="fas fa-times"></i>' 
+        menuToggle.innerHTML = navLinks.classList.contains('active')
+            ? '<i class="fas fa-times"></i>'
             : '<i class="fas fa-bars"></i>';
     });
-    
+
     // Close menu when clicking on a link
     const navItems = navLinks.querySelectorAll('a');
     navItems.forEach(item => {
@@ -28,6 +28,15 @@ if (menuToggle && navLinks) {
             navLinks.classList.remove('active');
             menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
         });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        const navbar = document.querySelector('.navbar');
+        if (!navbar.contains(e.target)) {
+            navLinks.classList.remove('active');
+            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        }
     });
 }
 
