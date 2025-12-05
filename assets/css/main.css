@@ -238,6 +238,17 @@ section {
     font-size: 1.5rem;
     color: var(--primary-blue);
     cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.menu-toggle:hover {
+    background-color: rgba(9, 132, 227, 0.1);
+}
+
+.menu-toggle i {
+    pointer-events: none;
 }
 
 /* Hero Section */
